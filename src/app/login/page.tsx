@@ -35,7 +35,7 @@ const Login = () => {
             </div>
 
             <button
-              className="bg-indigo-600 text-white font-bold px-4 py-2 w-full rounded-md hover:bg-indigo-700"
+              className="bg-indigo-500 text-white font-bold px-4 py-2 w-full rounded-md hover:bg-indigo-700"
               type="submit"
             >
               Sign in

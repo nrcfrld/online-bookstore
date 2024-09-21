@@ -1,10 +1,13 @@
+import Header from "@/components/layouts/Header";
+import Hero from "@/components/partials/Hero";
+import LatestProducts from "@/components/partials/LatestProducts";
+
 export default function Home() {
   return (
-    <button
-      className="bg-blue-600 text-white px-4 py-2 rounded-lg font-bold hover:bg-blue-400 duration-500"
-      type="button"
-    >
-      Klik Disini
-    </button>
+    <div className="bg-gray-50 min-h-screen">
+      <Header></Header>
+      <Hero></Hero>
+      <LatestProducts></LatestProducts>
+    </div>
   );
 }
