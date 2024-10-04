@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="bg-gray-950 px-4 text-white py-16">
+    <div className="bg-gray-950 px-4 text-white py-24 -mt-16">
       <div>
         <h2 className="text-2xl font-bold mb-2">
           Selamat Datang di MyBookstore

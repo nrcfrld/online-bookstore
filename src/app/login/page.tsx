@@ -12,7 +12,7 @@ const Login = () => {
           </Link>
         </p>
 
-        <form action="">
+        <form>
           <div className="mt-8 flex flex-col gap-4">
             <div>
               <label className="block mb-2" htmlFor="username">
