@@ -5,10 +5,10 @@ import { useState } from "react";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 
 const Header = () => {
-  const [isLogin, setIsLogin] = useState(true);
+  const [isLogin, setIsLogin] = useState(false);
 
   return (
-    <header className="px-4 bg-white py-4 fixed w-full shadow-sm">
+    <header className="px-4 bg-white dark:bg-gray-900 py-4 fixed w-full shadow-sm">
       <div className="flex justify-between items-center">
         <h1>
           <Link className="text-lg font-bold" href={"/"}>

@@ -52,12 +52,12 @@ const DetailProduct = ({ params }: { params: { id: string | number } }) => {
       <section className="px-4 mt-16">
         <h2 className="text-2xl font-bold mb-6">Lihat buku lainnya</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+          {/* <ProductCard></ProductCard>
           <ProductCard></ProductCard>
           <ProductCard></ProductCard>
           <ProductCard></ProductCard>
           <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
-          <ProductCard></ProductCard>
+          <ProductCard></ProductCard> */}
         </div>
       </section>
     </>

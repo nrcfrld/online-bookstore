@@ -1,7 +1,23 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import ProductCard from "../shared/ProductCard";
 
+const API_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+
 const LatestProducts = () => {
-  const products = [1, 2, 3, 4, 5, 6];
+  const [products, setProducts] = useState([]);
+
+  const loadProducts = async () => {
+    const response = await fetch(`${API_URL}/api/products`);
+    const body = await response.json();
+
+    setProducts(body.data);
+  };
+
+  useEffect(() => {
+    loadProducts();
+  }, []);
 
   return (
     <section className="px-4 mt-8">
@@ -10,7 +26,7 @@ const LatestProducts = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-8">
         {products.map((item, index) => (
-          <ProductCard key={index}></ProductCard>
+          <ProductCard product={item} key={index}></ProductCard>
         ))}
       </div>
     </section>
